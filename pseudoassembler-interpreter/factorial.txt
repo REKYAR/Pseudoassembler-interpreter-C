@@ -1,0 +1,20 @@
+N	DC INTEGER(6)
+ONE 	DC INTEGER(1)
+TWO 	DC INTEGER(2)
+//komentarz
+RESULT	DC INTEGER(1)
+
+BEGIN	L 	0,N
+	C	0,TWO
+	JN	END
+	L	0,RESULT      //komentarz
+	M	0,N
+//komentarz
+	ST	0,RESULT
+	L	0,N       //komentarz
+	S	0,ONE
+	ST	0,N
+	J	BEGIN     //komentarz
+END	SR	0,0     //komentarz
+//dadada
+//daade

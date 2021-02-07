@@ -1,0 +1,29 @@
+N 	DC INTEGER(20) 	//R1-ITERATOR
+ONE 	DC INTEGER(1) 	//R2-ADREST[i]
+BYTE 	DC INTEGER(4) 	//R3-ELEMENTi-1
+T 	DS 20*INTEGER 	//R4-ELEMENTi-2
+RESULT 	DS INTEGER
+ZERO	DC INTEGER(0)
+
+ 	L 	1, ONE
+ 	A 	1, ONE
+ 	A 	1, ONE
+ 	LA 	2, T
+ 	L 	3, ONE
+ 	L 	4, ONE
+ 	ST 	3, 0(2)
+ 	ST 	4, 4(2)
+ 	A 	2, BYTE
+ 	A 	2, BYTE
+LOOP 	C 	1, N
+ 	JP 	END
+	LR	6, 4
+ 	AR 	4, 3
+ 	LR 	5, 4
+ 	ST 	5, 0(2)
+ 	LR 	4, 5
+	LR	3, 6
+ 	A 	1, ONE
+ 	A 	2, BYTE
+ 	J 	LOOP
+END 	ST 	5, RESULT

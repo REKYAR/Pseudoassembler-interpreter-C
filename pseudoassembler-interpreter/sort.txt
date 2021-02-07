@@ -1,0 +1,47 @@
+TAB 	   DC 10*INTEGER
+N	   DC INTEGER(10)
+JEDEN	   DC INTEGER(1)
+CZTERY 	   DC INTEGER(4)
+
+	   LA 0,TAB	//TAB
+	   A 0,CZTERY
+	   L 1,N	//N
+	   S 1,JEDEN	//N - 1
+	   L 2,JEDEN	//i
+//
+//petla for(i = 1; i <= N - 1; ++i)
+//
+LOOP_I	   CR 2,1	//i <= N - 1
+	   JP END
+//
+	   LR 3,2	//j = i
+	   LR 4,0	//&TAB[j]
+//petla for(j = i; j >= 1 && TAB[j] <= TAB[j - 1] - 1; --j)
+//
+LOOP_J	   C 3,JEDEN	//j >= 1
+	   JN LOOP_END
+//
+	   LR 5,4	//&TAB[j]
+	   S 5,CZTERY	//&TAB[j - 1]
+//
+	   L 6,0(4)	//TAB[j]
+	   L 7,0(5)	//TAB[j - 1]
+	   S 7,JEDEN	//TAB[j - 1] - 1
+//
+	   CR 6,7	//TAB[j] <= TAB[j - 1] - 1
+	   JP LOOP_END
+//
+	   A 7,JEDEN	//TAB[j - 1]
+//zamiana
+	   ST 6,0(5)	//TAB[j] = TAB[j - 1]
+	   ST 7,0(4)	//TAB[j - 1] = TAB[j]
+//
+	   S 3,JEDEN	//--j
+	   S 4,CZTERY	//&TAB[j] - 4
+	   J LOOP_J
+//
+LOOP_END   A 2,JEDEN	//++i
+	   A 0,CZTERY	//&TAB[i] + 4
+	   J LOOP_I
+//
+END	   SR 0,0	//koniec

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mieszko/OneDrive - Politechnika Warszawska/na_zajecia/semestr1/programowanie1/clion_version/main.c
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+stdlib.h
+-
+curses.h
+-
+
+C:/Users/Mieszko/PDC/PDCurses-3.8/curses.h
+stdarg.h
+-
+stddef.h
+-
+stdio.h
+-
+wchar.h
+-
+stdbool.h
+-
+

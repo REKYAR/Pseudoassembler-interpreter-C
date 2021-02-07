@@ -1,0 +1,25 @@
+//ddd
+JEDEN       DC   INTEGER(1)     // Normalne spacje4
+DZIEWIEC    DC   INTEGER(9) //4
+WYNIK       DS   INTEGER        // Wiele spacji4
+JEDENASCIE  DC   3*INTEGER(11)  // Tabulacja12
+DUPA        DS   3*INTEGER      //12
+///łalalaallalalalla
+DUPPERINI   DC   5*INTEGER      //20
+DUPA123     DS   INTEGER
+            DS   3*INTEGER      // Brak etykiety
+
+    L     1,JEDEN               // Pobieranie 1
+    L     2, 4(15)           // Pobieranie 9 do sumy
+    L     3, DZIEWIEC           // Pobieranie 9 do różnicy
+    LA    4, JEDENASCIE         // Pobieranie tablicy z w. 11
+    SR    5, 5                  // Zerowanie wyniku
+    A     2, 12          (14)               // Dodawanie 9 i 11
+    S     3,    8     (14)               // Odejmowanie 11 od 9
+    S     2, 12(15)
+    CR    2, 3                  // Porównywanie wyniku i innej 11 ( 18-(-2) )
+    JN    NPOS                  // Jeżeli różnica mniejsza od zera to mniejszy w.l. 0
+    JZ    NPOS                  // Tak samo dla zera
+    AR    5, 1                  // Jeżeli brak skoku to jest większa
+NPOS      ST    5, WYNIK        // Zapis wyniku
+//trololo

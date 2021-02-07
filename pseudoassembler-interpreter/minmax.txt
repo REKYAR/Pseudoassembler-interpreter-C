@@ -1,0 +1,31 @@
+DANE DS 100*INTEGER
+JEDEN DC INTEGER(1)
+ZERO DC INTEGER(0)
+CZTERY DC INTEGER(4)
+STO DC INTEGER(100)
+WMIN DS INTEGER
+WMAX DS INTEGER
+
+	LA 0, DANE
+	LA 7, DANE
+	M 1, CZTERY
+	L 2, STO
+	M 2, CZTERY
+	AR 7, 2
+	L 4,0(0) //rejestr minimum
+	L 5,0(0) //rejestr maksimum
+NEXT	CR 0, 7
+	JZ KONIEC
+	L 6,0(0) //bieżąca wartość tablicy
+S_MIN	CR 4, 6
+	JN S_MAX
+	JZ N_P
+	LR 4, 6
+	J N_P
+S_MAX	CR 5, 6
+	JZ N_P
+	LR 5, 6
+N_P	A 0, CZTERY
+	J NEXT
+KONIEC	ST 4, WMIN
+	ST 5, WMAX

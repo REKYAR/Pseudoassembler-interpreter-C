@@ -1,0 +1,26 @@
+DAL KAŻDEGOP POLA ETYKIETA I ORDER_CODE ROZKAZU UZUPEŁNIANE TAK SAMO
+
+SEKCJA ZMIENNYCH:
+DLA KOMÓREK PAMIĘCI ZAWSZE UZUPEŁNIONE POLE DIRECTIVE_TYPEFIELD
+DC
+arg1 = const index_shift=0;
+arg1 = n, arg2 = const, index_shift=-1;
+
+DS
+-, index_shift=0;
+arg1=n, index_shift=-1;
+
+SEKCJA DANYCH:
+
+OPERACJE NA REJESTRACH:
+arg1 = r1
+arg2 = r2
+
+OPERACJE TYPU JUMP:
+arg1 = int1(przesuniecie wzgl poczatku)
+arg2 = addr2(adres poczatkowy)
+
+ZWYKLY ROZKAZ REJEST PAMIEC:
+arg1 = r1
+arg2 = addr1(adres poczatkowy)
+index_shift =int1 (przesuniecie wzgl poczatku)

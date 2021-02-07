@@ -1,0 +1,37 @@
+﻿  pseudoassembler-interpreter.c
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(77,36): warning C4013: 'get_byte_value' undefined; assuming extern returning int
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(733,38): warning C4101: 'c': unreferenced local variable
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1093,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1471,130): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1471,123): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1475,72): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1475,65): warning C4024: 'execute': different types for formal and actual parameter 5
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1479,138): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1479,131): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1484,138): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1484,131): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1507,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1507,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1516,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1516,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1525,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1525,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1534,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1534,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1544,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1544,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1553,150): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1553,143): warning C4024: 'printstate': different types for formal and actual parameter 8
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1575,72): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1575,65): warning C4024: 'execute': different types for formal and actual parameter 5
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1082,1): warning C4047: 'initializing': 'int' differs in levels of indirection from 'void *'
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1089,170): warning C4101: 'tpsr': unreferenced local variable
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1088,97): warning C4101: 'a': unreferenced local variable
+C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\pseudoassembler-interpreter\pseudoassembler-interpreter.c(1088,100): warning C4101: 'b': unreferenced local variable
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  0 of 30 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  pseudoassembler-interpreter.vcxproj -> C:\Users\Mieszko\source\repos\pseudoassembler-interpreter\Release\pseudoassembler-interpreter.exe

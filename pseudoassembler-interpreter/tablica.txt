@@ -1,0 +1,23 @@
+TABLICA     DC 100*INTEGER
+JEDEN       DC INTEGER(1)
+CZTERY      DC INTEGER(4)
+STO         DC INTEGER(100)
+ZERO        DC INTEGER(0)
+MAX         DS INTEGER
+MAX_INDEX   DS INTEGER
+
+            L   0,ZERO
+            LA  1,TABLICA
+            L   2,TABLICA
+            L   3,ZERO
+START       C   0,STO
+            JZ  KONIEC
+            C   2,0(1)
+            JP  NASTEPNY
+            L   2,0(1)
+            LR  3,0
+NASTEPNY    A   1,CZTERY
+            A   0,JEDEN
+            J   START
+KONIEC      ST  2,MAX
+            ST  3,MAX_INDEX

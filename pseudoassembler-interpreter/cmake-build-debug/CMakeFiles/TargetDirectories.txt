@@ -1,0 +1,3 @@
+C:/Users/Mieszko/OneDrive - Politechnika Warszawska/na_zajecia/semestr1/programowanie1/clion_version/cmake-build-debug/CMakeFiles/clion_version.dir
+C:/Users/Mieszko/OneDrive - Politechnika Warszawska/na_zajecia/semestr1/programowanie1/clion_version/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mieszko/OneDrive - Politechnika Warszawska/na_zajecia/semestr1/programowanie1/clion_version/cmake-build-debug/CMakeFiles/rebuild_cache.dir

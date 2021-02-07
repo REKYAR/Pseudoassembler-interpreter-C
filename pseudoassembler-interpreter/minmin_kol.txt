@@ -1,0 +1,50 @@
+T 	DS 100*INTEGER 		//R1 - WARTOŚĆ MIN_1
+N 	DC INTEGER (100) 	//R2 - WARTOŚĆ MIN_2
+ONE 	DC INTEGER (1) 		//R3 - WARTOŚĆ AKTUALNA
+BYTE 	DC INTEGER (4) 		//R4 - ITERATOR
+RESULT 	DS INTEGER
+
+    L 	4, ONE
+ 	LA 	3, T
+ 	L 	2, 0(3)
+ 	C 	2, 4(3)
+ 	JN 	DRUGI_WI
+ 	JZ 	ROWNE
+ 	L 	1, 4(3)
+ 	J 	ADD
+DRUGI_WI L 	1, 0(3)
+ 	L 	2, 4(3)
+ 	J 	ADD
+ROWNE 	L 	1, 0(3)
+ 	A 	4, ONE
+ 	A 	3, BYTE
+LOOP1 	A 	4, ONE
+ 	A 	3, BYTE
+ 	C 	1, 0(3)
+ 	JZ 	LOOP1
+ 	JN 	AKTU_WI
+ 	LR 	2, 1
+ 	L 	1, 0(3)
+ 	J 	ADD1
+AKTU_WI L 	2, 0(3)
+ 	J 	ADD1
+ADD 	A 	4, ONE
+ 	A 	3, BYTE
+ADD1 	A 	4, ONE
+ 	A 	3, BYTE					
+LOOP 	C 	4, N
+ 	JP 	END
+ 	C 	2, 0(3)
+ 	JN 	NEXT
+ 	JZ 	NEXT
+ 	C 	1, 0(3)
+ 	JP 	NEWMIN_1
+ 	L 	2, 0(3)
+ 	J 	NEXT
+NEWMIN_1 LR 	2, 1
+ 	L 	1, 0(3)
+NEXT 	A 	4, ONE
+ 	A 	3, BYTE		
+ 	J 	LOOP					
+END 	AR 	1, 2
+ 	ST 	1, RESULT		
